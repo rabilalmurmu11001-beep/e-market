@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@theme {
+  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  --color-neutral-100: #e2e8f0;
+  --color-neutral-200: #cbd5e1;
+}
+
+/* Enforce neutral-200 border colors across the application */
+.border-neutral-100,
+.border-neutral-300,
+.border-neutral-400,
+.border-neutral-300\/60,
+.border-gray-100,
+.border-gray-200,
+.border-gray-300,
+.border-slate-100,
+.border-slate-200,
+.border-slate-300,
+.border-zinc-100,
+.border-zinc-200,
+.border-zinc-300 {
+  border-color: var(--color-neutral-200) !important;
+}
+
+.border,
+.border-t,
+.border-b,
+.border-l,
+.border-r {
+  border-color: var(--color-neutral-200);
+}
